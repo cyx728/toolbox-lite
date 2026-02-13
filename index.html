@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToolBox Lite - 前端工具集合</title>
+    <meta name="description" content="纯前端静态工具集合平台，包含文本处理、编码转换、时间工具、随机生成、本地存储管理等功能。" />
+    <meta name="keywords" content="工具网站,在线工具,前端工具,JSON格式化,Base64,时间戳转换,UUID生成" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23007acc%22/><text x=%2250%22 y=%2260%22 font-size=%2250%22 text-anchor=%22middle%22 fill=%22white%22>TB</text></svg>">
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">ToolBox Lite</div>
+        <div class="nav-actions">
+            <button id="themeToggle">切换主题</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar" id="sidebar">
+            <ul>
+                <li data-tool="text">文本处理</li>
+                <li data-tool="encode">编码转换</li>
+                <li data-tool="time">时间工具</li>
+                <li data-tool="random">随机生成</li>
+                <li data-tool="storage">本地存储</li>
+            </ul>
+        </aside>
+
+        <main class="content" id="content"></main>
+    </div>
+
+    <footer class="footer">
+        <p>© 2026 ToolBox Lite</p>
+        <p>Author: Your Name | <a href="#">GitHub</a></p>
+    </footer>
+
+    <div id="toast" class="toast"></div>
+</body>
+</html>
